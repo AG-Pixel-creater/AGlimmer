@@ -1,9 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const form = document.querySelector('form');
+    const form = document.getElementById('welcomeForm');
     
     form.addEventListener('submit', function(event) {
         event.preventDefault();
-        alert('Form submitted!');
-        form.reset();
+        const username = document.getElementById('username').value;
+        alert('Welcome, ' + username + '!');
+        form.submit();
     });
 });
