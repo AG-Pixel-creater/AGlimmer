@@ -3,49 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AG Browser</title>
+    <title>Welcome to AG Browser</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="logo.jpg" alt="AG Browser Logo">
+            <img src="logo.png" alt="AG Browser Logo">
         </div>
-        <h1>AG Browser</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#settings" id="settingsLink">Settings</a></li>
-            </ul>
-        </nav>
+        <h1>Welcome to AG Browser</h1>
     </header>
     <main>
-        <section id="hero">
-            <h2>Welcome to AG Browser</h2>
-            <p>Your gateway to the web with advanced features.</p>
-            <form id="searchForm" action="search.php" method="GET">
-                <input type="text" id="searchQuery" name="query" placeholder="Enter search query..." required>
-                <button type="submit">Search</button>
-            </form>
+        <section id="welcome">
+            <h2>Hello, User!</h2>
+            <p>Welcome to AG Browser. We're glad to have you here.</p>
         </section>
-        <section id="about">
-            <h2>About AG Browser</h2>
-            <p>AG Browser is a custom-built web browser designed to provide fast and efficient browsing experiences.</p>
-        </section>
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                
+        <section id="interactive">
+            <form id="welcomeForm" action="welcome.php" method="POST">
+                <label for="username">Enter your name:</label>
+                <input type="text" id="username" name="username" required>
                 <button type="submit">Submit</button>
             </form>
         </section>
@@ -53,29 +29,6 @@
     <footer>
         <p>&copy; 2024 AG Browser</p>
     </footer>
-
-    <!-- Settings Modal -->
-    <div id="settingsModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Settings</h2>
-            <form>
-                <label for="theme">Theme:</label>
-                <select id="theme" name="theme">
-                    <option value="dark">Dark</option>
-                    <option value="light">Light</option>
-                </select>
-
-                <label for="fontSize">Font Size:</label>
-                <select id="fontSize" name="fontSize">
-                    <option value="small">Small</option>
-                    <option value="medium">Medium</option>
-                    <option value="large">Large</option>
-                </select>
-            </form>
-        </div>
-    </div>
-
     <script src="script.js"></script>
 </body>
 </html>
