@@ -24,22 +24,6 @@ header h1 {
     margin: 0;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 1em;
-}
-
-nav ul li a {
-    color: #ffffff;  /* White color for navigation links */
-    text-decoration: none;
-}
-
 main {
     padding: 1em;
 }
@@ -48,27 +32,28 @@ section {
     margin-bottom: 2em;
 }
 
-#hero {
+#interactive {
     text-align: center;
-    background-color: #2c2c2c;  /* Slightly lighter dark section */
-    padding: 2em;
-    margin-bottom: 2em;
 }
 
-#hero form {
+form {
+    display: inline-block;
     margin-top: 1em;
 }
 
-#hero input[type="text"] {
-    padding: 0.5em;
-    width: 300px;
-    font-size: 16px;
-    color: #e0e0e0; /* Light text color inside input */
-    background-color: #1a1a1a; /* Dark background for input */
-    border: 1px solid #555; /* Border color for input */
+form label {
+    margin-right: 10px;
 }
 
-#hero button {
+form input[type="text"] {
+    padding: 0.5em;
+    font-size: 16px;
+    background-color: #333;
+    color: #e0e0e0;
+    border: 1px solid #555;
+}
+
+form button {
     padding: 0.5em 1em;
     background-color: #4CAF50;
     color: #ffffff;
@@ -76,7 +61,7 @@ section {
     cursor: pointer;
 }
 
-#hero button:hover {
+form button:hover {
     background-color: #45a049;
 }
 
@@ -85,34 +70,4 @@ footer {
     color: #ffffff;
     text-align: center;
     padding: 1em 0;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: 0 auto;
-}
-
-form label {
-    margin-bottom: 0.5em;
-}
-
-form input, form textarea, form button {
-    margin-bottom: 1em;
-    padding: 0.5em;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: #2c2c2c;  /* Dark input fields */
-    color: #ffffff;  /* White text color inside inputs */
-}
-
-form button {
-    background-color: #4CAF50;
-    color: #ffffff;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: #45a049;
 }
